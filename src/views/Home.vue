@@ -21,7 +21,7 @@
     <v-row class="book-group" justify="center">
       <v-spacer />
       <v-col>Recommended book</v-col>
-      <v-col>{{ getRecommendedBook.name }}</v-col>
+      <v-col>{{ getRecommendedBook }}</v-col>
       <v-spacer />
     </v-row>
     <hr />

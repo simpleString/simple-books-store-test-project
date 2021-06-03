@@ -7,15 +7,9 @@
 </template>
 
 <script>
-import db from "./firebase";
-
 export default {
   created() {
     this.$store.dispatch("initData");
-    db.collection("books").onSnapshot((book) => {
-      const bookInstance = book.docs[0].data();
-      console.log(bookInstance);
-    });
   },
   computed: {
     bookLoaded() {

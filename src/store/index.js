@@ -121,7 +121,7 @@ export default new Vuex.Store({
         })
       );
       const resultObject = filter_result.find((book) => book.rating === max);
-      return resultObject;
+      return typeof resultObject === "undefined" ? "" : resultObject.name;
     },
 
     getAuthorById: (s) => (id) => {
